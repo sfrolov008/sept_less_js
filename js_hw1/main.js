@@ -51,9 +51,10 @@ console.log(typeof a, typeof b, typeof c);
 
 let fName = prompt('first_name', '');
 let lName = prompt('last_name', '');
-let age = prompt('age', '');
+let age = + prompt('age', '');
 let customer = (`Wellcome  ${fName} ${lName} ${age}`);
 console.log(customer);
+console.log(typeof age)
 
 // joke ))
 // true or fasle
