@@ -48,28 +48,19 @@ let books1_1 = {
     title: 'bookname1',
     pageCount: 'size1',
     genre: 'scientific',
-    author: [
-        name = "author1",
-        age = 34
-    ]
+    author: ["author1", 34]
 }
 let books1_2 = {
     title: 'bookname2',
     pageCount: 'size2',
     genre: 'technical',
-    author: [
-        name = "author2",
-        age = 35
-    ]
+    author: ["author2", 35]
 }
 let books1_3 = {
     title: 'bookname3',
     pageCount: 'size3',
     genre: 'fiction',
-    author: [
-        name = "author3",
-        age = 36
-    ]
+    author: ["author3", 36]
 }
 console.log(books1_1.genre);
 console.log(books1_2.author[0]);
