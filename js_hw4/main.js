@@ -297,20 +297,26 @@ let users = [
     {name: 'max', age: 31, status: true}
 ];
 for (let i = 0; i < users.length; i++){
-    if (!!users[i].status){
-        console.log(users[i])
+    if (!users[i].status){
+        console.log(users[i]);
     }
 }
+
+
 /*
 // OR------------------
- if (!users[i].status){
-        console.log(users[i])
+for (let i = 0; i < users.length; i++){
+    if (!!users[i].status){
+        console.log(users[i]);
     }
+}
 */
 
 /*
 // OR-------------------
-if (users[i].age > 30){
-    console.log(users[i])
+for (let i = 0; i < users.length; i++){
+    if (users[i].age > 30){
+        console.log(users[i]);
+    }
 }
 */
