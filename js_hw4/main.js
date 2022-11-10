@@ -35,7 +35,7 @@ for (let i = 0; i <someTexts.length; i++) {
 ]
 for (let i = 0; i <someIdTexts.length; i++) {
     let text = someIdTexts[i];
-    document.write(`<div> ${text.id} - ${text.prop}</div>`)
+    document.write(`<div> ${text.id}</div>`)
 }*/
 
 
@@ -133,55 +133,19 @@ let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'an
 
 
 
-/*let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
-
+let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+let ul = document.createElement("ul");
+document.write(`<ul>`)
 for (let i = 0; i < listOfItems.length; i++) {
-    document.write (
-            `
-            <ul>
-                <li>${listOfItems[0]}</li>
-                <li>${listOfItems[1]}</li>
-                <li>${listOfItems[2]}</li>
-                <li>${listOfItems[3]}</li>
-                <li>${listOfItems[4]}</li>
-                <li>${listOfItems[5]}</li>
-                <li>${listOfItems[6]}</li>
-                <li>${listOfItems[7]}</li>
-             </ul>
-            `
-    );
+    const listOfItem = listOfItems[i];
+    document.write(`<li>${listOfItem}</li>`);
+}
+document.write(`</ul>`);
 
-}*/
 
-/*по данному завданню мене бентежить структура в хтмл файлі.((((
-<ul>
-<li>html</li>
-</ul>
-<ul>
-    <li>css</li>
-</ul>
-<ul>
-    <li>javascript</li>
-</ul>
-<ul>
-    <li>mysql</li>
-</ul>
-<ul>
-    <li>mongodb</li>
-</ul>
-<ul>
-    <li>react</li>
-</ul>
-<ul>
-    <li>angular</li>
-</ul>
-<ul>
-    <li>node.js</li>
-</ul>
 
-яким чином переписати код, щоб отримати звичайну структуру????????????
-А змінюючи на document.write ('<ul><li>${listOfItems[i]}</li></ul>`); отримуємо 8 однакових списків(((
-*/
+
+
 
 
 
@@ -283,7 +247,7 @@ let users = [
 - користувачів які старші за 30 років*/
 
 
-let users = [
+/*let users = [
     {name: 'vasya', age: 31, status: false},
     {name: 'petya', age: 30, status: true},
     {name: 'kolya', age: 29, status: true},
@@ -300,7 +264,7 @@ for (let i = 0; i < users.length; i++){
     if (!users[i].status){
         console.log(users[i]);
     }
-}
+}*/
 
 
 /*
