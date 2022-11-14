@@ -134,7 +134,8 @@ let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'an
 
 
 let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
-let ul = document.createElement("ul");
+
+
 document.write(`<ul>`)
 for (let i = 0; i < listOfItems.length; i++) {
     const listOfItem = listOfItems[i];
