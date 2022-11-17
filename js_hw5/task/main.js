@@ -1,11 +1,15 @@
 /*- створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б*/
 
-/*let result;
+
+/*
 function rectangle (a, b){
-  result = a * b;
+  let result = a * b;
+  return result
 }
-rectangle(3, 10)
-console.log(result)*/
+let x = rectangle(3, 10);
+console.log(x)
+*/
+
 
 /*-----------------------------------------------------*/
 
@@ -37,7 +41,7 @@ console.log(result);*/
 /*function rectangle (a, b){
     let areaRec = a * b;
     return areaRec
-}
+    }
 const P = 3.14;
 function circle (r){
   let areaCir = P * (r ** 2) ;
@@ -151,8 +155,7 @@ arrWriter(users);*/
 
 /*- створити функцію яка повертає найменьше число з масиву*/
 
-/*
-let minNumber;
+/*let minNumber;
 function getMin (array) {
     for (let number of array) {
     minNumber = Math.min(...array);
@@ -167,14 +170,13 @@ console.log(minNumber);*/
 /*- створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його.
 Приклад [1,2,10]->13*/
 
-let result = 0;
+/*let result = 0;
 function count (array){
     for (let i = 0; i < array.length; i++){
         result += array[i];
     }
-    return result;
 }
 let someArr = [45, 35, 67, 90, 47, 51, 8, 16, 25];
 
 count(someArr)
-console.log(result);
+console.log(result);*/
