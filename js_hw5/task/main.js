@@ -1,6 +1,5 @@
 /*- створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б*/
 
-
 /*
 function rectangle (a, b){
   let result = a * b;
@@ -60,6 +59,7 @@ console.log(cylinderArea);*/
 
 /*function arrWriter (array){
     for (let i = 0; i < array.length; i++) {
+        console.log(array[i]);
     }
 }
 let users = [
@@ -68,8 +68,7 @@ let users = [
     {id: 3, name: 'kolya', age: 29, status: true},
     {id: 4, name: 'olya', age: 28, status: false}
 ];
-arrWriter(users);
-console.log(users);*/
+arrWriter(users);*/
 
 
 /*-----------------------------------------------------*/
@@ -160,10 +159,10 @@ function getMin (array) {
     for (let number of array) {
     minNumber = Math.min(...array);
     }
+    return minNumber;
 }
 let someArr = [45, 35, 67, 90, 47, 51, 8, 16, 25];
-getMin(someArr);
-console.log(minNumber);*/
+getMin(someArr);*/
 
 /*-----------------------------------------------------*/
 
@@ -175,8 +174,9 @@ function count (array){
     for (let i = 0; i < array.length; i++){
         result += array[i];
     }
+    return result;
 }
 let someArr = [45, 35, 67, 90, 47, 51, 8, 16, 25];
 
-count(someArr)
-console.log(result);*/
+count(someArr)*/
+

@@ -1,6 +1,8 @@
 /*1. Створити пустий масив та :*/
 /*a. заповнити його 50 парними числами за допомоги циклу.*/
 
+
+// пусті ячейки
 /*let someArr1 = []
 for (let i = 0; i < 100; i++) {
         if (i % 2 === 0){
@@ -8,6 +10,25 @@ for (let i = 0; i < 100; i++) {
     }
 }
 console.log( someArr1);*/
+
+/*************************************/
+
+/*let someArr1 = [];
+for (let i = 0; i < 100; i++) {
+   if (i % 2 === 0){
+      someArr1.push(i)
+   }
+}
+   console.log(someArr1);*/
+
+/*************************************/
+
+/*let someArr1 = [];
+for (let i = 0; i < 50; i++) {
+      someArr1[i] = 18;
+}
+   console.log(someArr1);
+*/
 
 /*************************************/
 
@@ -27,10 +48,8 @@ console.log( someArr1);*/
 
 /*let someArr1 = []
 for (let i = 0; i < 20; i++) {
-    if ( someArr1[i] = Math.floor(Math.random() * 100)){
-        console.log(someArr1[i])
-    }
-
+    ( someArr1[i] = Math.floor(Math.random() * 100))
+        console.log(someArr1[i]);
 }*/
 
 /*************************************/
@@ -38,15 +57,11 @@ for (let i = 0; i < 20; i++) {
 /*
 d. Заповнити масив 20ма рандомними чисалами в діапазоні від 8 до 732 (Google: Generate random number JS)*!/*/
 
-/*
-let someArr1 = []
+/*let someArr1 = []
 for (let i = 0; i < 20; i++) {
-    if (someArr1[i] = Math.floor(Math.random() * (732-8)+8)){
-        console.log(someArr1[i])
-    }
-
-}
-*/
+    (someArr1[i] = Math.floor(Math.random() * (732-8)+8))
+        console.log(someArr1[i]);
+}*/
 
 /*************************************/
 
