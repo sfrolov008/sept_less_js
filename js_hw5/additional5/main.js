@@ -79,7 +79,7 @@ numWriter(12)*/
 /*- Даны два целых числа A и В . Выведите все числа от A до B включительно, в порядке возрастания,
 если A < B, или в порядке убывания в противном случае.*/
 
-let numWriter = (a, b) => {
+/*let numWriter = (a, b) => {
     let array = [];
         if (a > b) {
         for (let i = 0; i < a - b + 1; i++) {
@@ -97,7 +97,7 @@ let numWriter = (a, b) => {
     console.log(array);
 }
 
-numWriter(10, 14)
+numWriter(10, 14)*/
 
 
 /*let numWriter = (a, b) => {
@@ -148,9 +148,27 @@ EXAMPLE:
     [0,1,2,3,4] => [1,2,3,4,0]
     [0,0,1,0]   => [1,0,0,0]*/
 
+// 1 варіант
+/*let arr = [1, 0, 6, 0, 3, 0, 3, 2];
+let zeroArr = [];
+let resArr = [];
+function zero(array) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i]) {
+            resArr[resArr.length] = array[i];
+        } else {
+            zeroArr[zeroArr.length] = array[i];
+        }
+    }
+    for (let k = 0; k < zeroArr.length;k++) {
+        resArr[resArr.length] = zeroArr[k];
+    }
+}
+zero(arr);
+console.log(resArr);*/
 
+// 2 варіант
 /*let arr1 = [1, 0, 6, 0, 3];
-
 function zeroMoove(array) {
     for (let i = 0; i < array.length-1; i++) {
         if (array[i] === 0 && array[i + 1] !== 0) {
@@ -163,11 +181,9 @@ function zeroMoove(array) {
 let x = zeroMoove(arr1);
 console.log(x);*/
 
-
-/*
-let arr1 = [1, 0, 6, 0, 3];
+// 3 варіант  з практичної
+/*let arr1 = [1, 0, 6, 0, 3];
 function zeroMover (array){
-
     let arr2 =[];
     let counter = 0;
     let index = 0;
@@ -185,29 +201,16 @@ function zeroMover (array){
     return arr2;
 }
 let x = zeroMover(arr1);
-console.log(x);
-*/
-
-/*let arr1 = [1, 0, 6, 0, 3];
-function zeroMover(array) {
-     for (let i = 0; i < array.length; i++) {
-        if(array[i] !== 0 && array[i-1] === 0){
-            [array[i-1], array[i]] = [array[i], array[i-1]];
-            i = -i;
-        }
-    }
-    return array
-}
-let x = zeroMover(arr1);
 console.log(x);*/
+
+
 
 /*- Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
 EXAMPLE:
     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ name, age, model ]*/
 
 
-/*
-let arr =  [
+/*let arr =  [
     {name: 'Dima', age: 13},
     {model: 'Camry'}
 ]
@@ -215,15 +218,14 @@ function foo(array){
     let newArr = [];
     for (let i = 0, j = 0 ; i < array.length; i++) {
         for (const key in array[i]) {
-        newArr[j] = array;
+        newArr[j] = key;
         j++
         }
     }
             return newArr
 }
 let x = foo(arr);
-console.log(x);
-*/
+console.log(x);*/
 
 
 

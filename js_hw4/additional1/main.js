@@ -404,7 +404,7 @@ for (let i = 0; i < 100; i++) {
 /* -знайти наібльшу книжку.*/
 
 /*let j = books[0]
-for (let i = 0; i < books.length; i++) {
+for (   let i = 0; i < books.length; i++) {
     let book = books[i];
     if (j.pageCount > book.pageCount){
         book = j;

@@ -220,13 +220,12 @@ for (const number of someArr) {
 
 // Внутри цикла
 
-/*let someArr = [122, 233, 344, 455, 566, 677, 788, 899, 900, 1001];
+let someArr = [122, 233, 344, 455, 566, 677, 788, 899, 900, 1001];
 let anotherArr = [];
 for (let i = 0; i < someArr.length; i++) {
-    let someArrElement = someArr[i];
-    anotherArr[i] = someArrElement;
-console.log(anotherArr[i]);
-}*/
+    anotherArr[i] = someArr[i];
+}
+console.log(anotherArr);
 
 // Внe цикла
 
