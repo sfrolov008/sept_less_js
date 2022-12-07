@@ -212,7 +212,7 @@ let products = [
 for (let i = 0; i < products.length; i++){
     let product = products[i];
     document.write(
-        `
+            `
         <div class="content">
              <div class="product-card">
                  <h3 class="product-title">${product.title} Price -  ${product.price}</h3>

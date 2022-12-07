@@ -83,39 +83,32 @@
     this.year = year;
     this.maxSpeed = maxSpeed;
     this.engineV = engineV;
+
     this.drive = function () {
         console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
     }
     this.info = function () {
-        console.log(this.model, this.manufacturer, this.year, this.maxSpeed, this.engineV);
+        for (const key in this) {
+            if (typeof this[key] !== 'function') {
+                console.log(key, '--', this[key])
+            }
+        }
     }
-
-        /!*---------------------------------------*!/
-   // не зовсім зрозуміло даний момент, якщо функція інфо спочатку ітерує а потім виводить формат// `назва поля - значення поля` таким чином:
-    //     for (const key in (new Car)) {
-    //         console.log(key, '-', (new Car)[key])
-    //     }
-    // }
-    //     то (new Car)[key] - undefined!
-    // В чому помилка?
-        /!*---------------------------------------*!/
-
-    this.increaseMaxSpeed = function (newSpeed){
+    this.increaseMaxSpeed = function (newSpeed) {
         this.maxSpeed += newSpeed;
     }
-    this.changeYear = function (newValue){
+    this.changeYear = function (newValue) {
         this.year = newValue;
     }
-    this.addDriver = function (name, age, experience){
-        driver = {
-            name:name,
-            age:age,
-            experience:experience
-        }
-        console.log(driver);
+    this.addDriver = function (driver) {
+        this.driver = driver;
+        return driver
     }
 }
 let car = new Car('ZAZ-968', 'ZAZ', 1970, 330, '3.0l 2JZ-GTE');
+console.log(car);
+car.info()
+car.addDriver({name: 'Shcumaher', age: 53, exper: 38})
 console.log(car);*/
 
 
@@ -172,7 +165,7 @@ console.log(car);*/
 
 // -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги.
 
-class someInfo {
+/*class someInfo {
     constructor(name, age, footSize) {
         this.name = name;
         this.age = age;
@@ -212,4 +205,4 @@ for (const item in prince) {
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
 
 let find = cinerellas.find((value) => value.footSize === prince.footSize);
-console.log(find);
+console.log(find);*/
