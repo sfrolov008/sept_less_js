@@ -152,23 +152,19 @@ for (const course of coursesArray) {
 }*/
 
 
-
-
 //     - створити блок,
 //     - додати йому класи wrap, collapse, alpha, beta
 // - додати стилі(довільні значення) : колір фону, колір тексту, розмір тексту
 // - додати цей блок в body.
 // - клонувати його повністю, та додати клон в body.
 
-/*
-let div = document.createElement('div');
+/*let div = document.createElement('div');
 div.classList.add('wrap', 'collapse', 'alpha', 'beta');
 document.body.append(div);
 
-не зовсім зрозумів, що мається на увазі "клонувату", копія?
-*/
-
-
+let div2 = div.cloneNode(true);
+document.body.append(div2)*/
+// не зовсім зрозумів, що мається на увазі "клонувату", копія?
 
 
 // - Є масив:
@@ -177,7 +173,6 @@ document.body.append(div);
 // та додає його до блоку .menu. Завдання робити через цикли.
 
 // В template1.html
-
 
 
 // - Є масив
@@ -205,8 +200,6 @@ for (const element of coursesAndDurationArray) {
     div.innerText = `${element.title} -- ${['monthDuration']} -- ${element.monthDuration}`;
     document.body.append(div)
 }*/
-
-
 
 
 // - Є масив
@@ -246,20 +239,93 @@ for (const element of coursesAndDurationArray) {
     p.innerText = `${element.monthDuration}`;
 }*/
 
+
 // -----------
 //
 //     - Створити довільний елемент з id = text.  Використовуючи JavaScript,
 //     зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".
 //
+
+/*let div = document.createElement('div');
+div.id = 'text';
+document.body.append(div);
+let button = document.createElement('button');
+button.innerText = 'disappear';
+div.append(button)
+button.onclick = function (e) {
+        div.style.opacity = '0';
+  }*/
+
+
 //
 //     - створити інпут який приймає вік людини та кнопку яка підтверджує дію.
 //     При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18,
 //     та повідомити про це користувача
-//
+
+/*let input = document.createElement('input');
+input.placeholder = ' your age?';
+let button = document.createElement('button');
+button.innerText = 'send'
+document.body.append(input,button);
+button.onclick = function (){
+    if (input.value < 18){
+        if (confirm("Are your parent agree?")){
+        alert('Wellcome');
+        }else{
+            alert('Get out!')
+        }
+    }else if (input.value >= 18 &&  input.value < 89){
+        alert('Wellcome dear customer!');
+    }else if (input.value > 89){
+        if (confirm("Are you sure?")){
+            alert('Wellcome dear customer! Big Respect!!!')
+        }else{
+            alert('Bye-bye...')
+        }
+    }
+}*/
+
+
 //
 // *** Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання)
+
+let inputRow = document.createElement("input");
+inputRow.placeholder = 'row';
+let inputCell = document.createElement("input");
+inputCell.placeholder = 'cell';
+let inputData = document.createElement("input");
+inputData.placeholder = 'data';
+let button = document.createElement('button');
+button.innerText = ' let create table';
+document.body.append(inputRow, inputCell, inputData, button)
+
+
+button.onclick = function (e) {
+    let row = inputRow.value;
+    let cell = inputCell.value;
+    let text = inputData.value;
+
+    let tableCreator = function (rows, cells, data) {
+        let table = document.createElement('table');
+        table.style.border = '1px solid black';
+        document.body.append(table);
+        for (let i = 0; i < rows; i++) {    
+            let tr = document.createElement('tr');
+            table.appendChild(tr);
+            for (let j = 0; j < cells; j++) {
+                let td = document.createElement('td');
+                tr.appendChild(td);
+                td.style.border = '1px solid black';
+                td.innerText = `${data}`;
+            }
+        }
+    }
+    tableCreator(row, cell, text);
+}
+
+
 
 
 

@@ -1,0 +1,19 @@
+
+body{
+    margin: 30px
+}
+.wrap{
+    background-color: powderblue;
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+}
+#text{
+    background-color: powderblue;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
