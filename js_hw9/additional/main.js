@@ -181,7 +181,7 @@ document.body.onclick = function (event) {
 // Данные выводить в документ
 
 
-/*let users = [
+let users = [
     {id: 1, name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
     {id: 2, name: 'petya', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 1}},
     {id: 3, name: 'kolya', age: 20, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 121}},
@@ -232,6 +232,7 @@ divFilter.append(h2, p1, p2, p3);
 let userBox = document.getElementsByClassName('user');
 
 
+
 addEventListener("click", () => {
     for (let j = 0, i = 0; j < userBox.length, i < users.length; j++, i++) {
         if (checkbox1.checked && (users[i].status === false)) {
@@ -244,7 +245,7 @@ addEventListener("click", () => {
             userBox[j].hidden = false;
         }
     }
-});*/
+});
 
 
 
