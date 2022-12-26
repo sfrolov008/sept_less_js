@@ -42,7 +42,7 @@ button.onclick = function () {
 
 // - Создайте меню, которое раскрывается/сворачивается при клике
 
-/*let menu = ['item1','item2','item3'];
+let menu = ['item1','item2','item3'];
 let div = document.createElement('div');
 document.body.append(div);
 let span = document.createElement('span');
@@ -55,7 +55,7 @@ for (let i = 0; i < menu.length; i ++) {
 }
 div.append(span,ul);
 span.onclick = function (){
-    ul.classList.toggle('unvisible')}*/
+    ul.classList.toggle('unvisible')}
 
 
 // - Создать список комментариев , пример объекта коментария - {title : 'lorem', body:'lorem ipsum dolo sit ameti'}.
@@ -107,6 +107,7 @@ div.style.width = '400px';
 div.style.height = '300px';
 div.classList.add('divStyle', 'w300', 'h400', 'bgc');
 document.body.append(div);
+
 function reader(block) {
     console.log (`${block.tagName}/ ${block.className}/ ${block.id}/ ${block.style.height}*${block.style.width}`)
     let children = block.children;
@@ -181,7 +182,7 @@ document.body.onclick = function (event) {
 // Данные выводить в документ
 
 
-let users = [
+/*let users = [
     {id: 1, name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
     {id: 2, name: 'petya', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 1}},
     {id: 3, name: 'kolya', age: 20, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 121}},
@@ -245,7 +246,7 @@ addEventListener("click", () => {
             userBox[j].hidden = false;
         }
     }
-});
+});*/
 
 
 

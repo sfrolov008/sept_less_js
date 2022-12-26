@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*-----------------main style--------------------*/
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header_block {
+    width: 1200px;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.header_logo {
+    width: 10%;
+}
+
+.header_logo > a {
+    width: 10%;
+    font-size: 30px;
+    color: #ffd700;
+}
+
+.header_logo:hover {
+    cursor: pointer;
+}
+
+.header_nav {
+    width: 90%;
+    margin-right: 10%;
+    display: flex;
+}
+
+.nav_list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+}
+
+.nav_link > a:hover {
+    color: #548ed7;
+}
+
+.header_menu {
+    width: 50%;
+    font-size: 30px;
+    color: #ffd900;
+    display: none;
+    justify-content: right;
+}
+
+.burger:hover {
+    color: #548ed7;
+    cursor: pointer;
+}
+
+.xmark:hover {
+    color: #548ed7;
+    cursor: pointer;
+}
+
+.menu_list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: lightgray;
+    min-width: 170px;
+    font-size: 30px;
+    top: 100%;
+    padding: 0 0 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 2px 2px;
+    border-radius: 5px;
+    opacity: 0.95;
+}
+
+.menu_link {
+    padding: 10px 0;
+}
+
+.menu_link > a:hover {
+    color: #548ed7;
+}
+
+a, a:active {
+    color: #878787;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f1f3;
+}
+
+.content {
+    width: 1200px;
+    display: flex;
+    row-gap: 30px;
+    padding: 100px 0 30px 0;
+}
+
+.footer {
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a3354;
+    color: #ffffff;
+}
+
+/*---------------------templates---------------------*/
+.block_template {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.4) 3px 3px;
+}
+
+.btn_template {
+    min-width: 90px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    color: #878787;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 3px 3px;
+    cursor: pointer;
+}
+
+.btn_template:active {
+    box-shadow: none;
+    position: relative;
+    bottom: -3px;
+    right: -3px;
+}
+
+.card_template {
+    width: 160px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.card_template:hover {
+    border: 2px solid rgba(26, 51, 84, 0.31);
+}
+
+.list_template {
+    width: 80%;
+    padding: 30px;
+    margin: 10px 0;
+}
+
+.list_template > li {
+    margin: 5px 0;
+}
